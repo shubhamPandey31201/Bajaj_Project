@@ -13,7 +13,9 @@ const user = {
   email: "john@xyz.com",
   roll_number: "ABCD123"
 };
-
+app.get("/",(req,res)=>{
+    res.send("Baja_Coding round first");
+})
 // POST /bfhl endpoint
 app.post('/bfhl', (req, res) => {
   const data = req.body.data;
